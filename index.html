@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+
+        <div class="display-container">
+
+            <input readonly placeholder="password" class="display" data-passwordDisplay>
+            <button class="cobybtn" data-copy>
+                <span class="copy" data-copyMsg></span>
+                <img src="./Image/copyo.png" alt="copy" height="23" width="23">
+            </button>
+
+        </div>
+
+        <div class="input-container">
+
+            <div class="length-container">
+                <p>Password Length</p>
+                <p data-lengthNumber>0</p>
+            </div>
+
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+
+            <!-- check box -->
+
+            <div class="check">
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Include Uppercase Letter</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Include Lowercase Letter</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="number">
+                <label for="number">Include Number</label>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" id="symbol">
+                <label for="symbol">Include Symbol</label>
+            </div>
+
+            <!-- Strength Section -->
+
+            <div class="strength-container">
+                <p>Strength</p>
+                <div data-indicator></div>
+            </div>
+
+            <button class = "generateBtn"> Generate Password </button>
+
+        </div>
+
+    </div>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
