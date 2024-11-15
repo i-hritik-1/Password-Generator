@@ -243,3 +243,5 @@ generateBtn.addEventListener('click', () => {
     calculateStrength();
 
 })
+
+// kya baat hai
